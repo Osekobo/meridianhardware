@@ -1,0 +1,77 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+body{
+  background: whitesmoke;
+  color: green;
+}
+header{
+  display: flex;
+  background: brown;
+  color: white;
+  position: fixed;
+  width: 100%;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+.list{
+  display: flex;
+}
+.list:hover{
+  background: yellow;
+  color: black;
+}
+.tito{
+  display: flex;
+}
+.tit{
+  font-weight: 600;
+  margin: 0 30px;
+  transition: all .50s ease;
+}
+.tit:hover{
+  color: yellow;
+}
+.main img{
+  float: left;
+  width: 150px;
+  height: auto;
+}
+.searchbox ::placeholder, .searchbox input{
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+
+.searchbox input:hover{
+  border-bottom: 2px solid #ff6b14;
+}
+
+.icon{
+  float: right;
+  margin: -2px 5px;
+}
+
+.icon i{
+  font-size: 20px;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.searchbox input{
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  letter-spacing: 1px;
+  font-size: 16px;
+}

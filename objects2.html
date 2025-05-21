@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Objects</h1>
+  <script>
+my_object = [23, "Jane", 560, ["Lesson", "Maths", {"currency": "KES"}], 987, 76, "John"]
+
+print( my_object[3][2]["currency"])
+print(my_object[2])
+print(my_object[3][1])
+
+//4 
+my_object[3][2]["amount"] = 90
+print(my_object[3][2])
+
+// 5
+my_object[1]
+
+// 6
+
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // splice - remove elements
+    let names = ["Jane","John","Mark"]
+    console.log(names)
+    // splice - add elements
+    names.splice(2,1,"Jack","Joy")
+    console.log(names)
+
+    // splice - replacing
+   names.splice(1,2,"Joy","Jack")
+   console.log(names)
+
+   // number 2
+   let sourceArray = ['a', 'b', 'c', 'd', 'e', 'f'];
+   let extractedArray = sourceArray.slice(2, 5);
+   extractedArray.splice(0, extractedArray.length, 'x', 'y', 'z');
+   console.log(sourceArray);
+   console.log(extractedArray);
+
+  </script>
+</body>
+</html>

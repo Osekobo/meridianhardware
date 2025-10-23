@@ -44,7 +44,7 @@ header {
   background: transparent;
   /* padding: 30px 14%; */
   transition: var(--transition);
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
 }
 
 header.sticky {
@@ -164,6 +164,7 @@ span {
 
 /* === Buttons === */
 .btn {
+  margin-top: 20px;
   display: inline-block;
   padding: 14px 35px;
   background: var(--other-color);
@@ -225,6 +226,7 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3rem;
   align-items: center;
+  text-align: center;
 }
 
 .about-img img {
@@ -238,8 +240,13 @@ span {
 }
 
 .about-text p {
+  /* font-size: 20px; */
   color: var(--second-color);
-  line-height: 1.8;
+  line-height: 1.5;
+}
+.middle-text{
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* === Shop Section === */
@@ -268,6 +275,9 @@ span {
   border-radius: 10px;
   transition: var(--transition);
 }
+.row-btn{
+  text-align: center;
+}
 
 .row img:hover {
   transform: scale(1.05);
@@ -283,7 +293,7 @@ span {
 .box {
   background: var(--other-color);
   border-radius: var(--radius);
-  padding: 35px;
+  padding: 30px;
   transition: var(--transition);
 }
 

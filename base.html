@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meridian Hardware | Premium Tools & Equipment</title>
+
+  <title>{% block title %}Meridian Hardware | Premium Tools & Equipment{% end block %}</title>
 
   <!-- External CSS -->
   <link rel="stylesheet" href="hardware.css" />
@@ -26,10 +27,11 @@
 
     <ul class="navlist">
       <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About Us</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li><a href="#shop">Our Shop</a></li>
       <li><a href="#review">Our Customers</a></li>
       <li><a href="#contact">Contact Us</a></li>
+      <li><a href="login.html">Login</a></li>
     </ul>
 
     <div class="nav-icons">
@@ -39,6 +41,7 @@
     </div>
   </header>
 
+  {% block content %}
   <!-- Hero Section -->
   <section class="home" id="home">
     <div class="home-text">
@@ -291,13 +294,14 @@
     </div>
   </section>
 
+  
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="contact-content">
-      <div class="contact-img">
+      <!-- <div class="contact-img">
         <div class="c-one"><img src="honey.jpeg" alt="Contact Image 1" /></div>
         <div class="c-one"><img src="honey.jpeg" alt="Contact Image 2" /></div>
-      </div>
+      </div> -->
 
       <div class="contact-text">
         <h2>Contact Us</h2>
@@ -323,6 +327,7 @@
       </div>
     </div>
   </section>
+  {% end block %}
 
   <!-- Scroll to Top Button -->
   <a href="#" class="scroll"><i class="bx bx-up-arrow-alt"></i></a>
